@@ -11,6 +11,12 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
 .header {
     background-color: #1F2937;
     color: white;
@@ -42,16 +48,17 @@ li {
 .header-hero {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: stretch;
     flex-basis: 0;
     padding: 5em 0;
 }
 
 .header-hero-text {
-    flex-basis:auto;
+    flex-basis:25em;
     flex-grow:1;
-
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 .header-hero-text-title {
@@ -62,10 +69,21 @@ li {
     margin: 0;
 }
 
+.header-hero-text-button {
+    background-color:#3882f6;
+    padding: 0.5em 2em;
+    margin: 0;
+    width: fit-content;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 .img-placeholder {
     background-color: gray;
-    flex-basis:auto;
-    flex-grow:1;
-    padding: 3em 6em;
-    width: max-content;
+}
+
+.header-hero-image {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
 }
